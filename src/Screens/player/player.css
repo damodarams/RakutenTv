@@ -1,0 +1,11 @@
+.back{
+  /* position: absolute; */
+  height: 40px;
+  border: solid 2px red;
+  z-index: 999999999999999999999;
+}
+
+
+.detail-page{
+ display: inline;
+}

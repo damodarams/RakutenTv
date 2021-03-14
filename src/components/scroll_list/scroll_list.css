@@ -1,0 +1,63 @@
+.main {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card {
+    padding-left: 15px;
+    min-width: 100%;
+    min-height: 250px;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.card--content {
+    background-image: url("../../assets/movie_icon.png");
+    box-shadow: 0px 0px 0px 0px  #ffe300;
+    transition: box-shadow 0.6s linear;
+    border-radius: 5px;
+    min-width: 200px;
+    margin: 5px;
+}
+
+.card--content:hover {
+  box-shadow: 0px 0px 0px 5px  #ffe300;
+  cursor: pointer;
+}
+
+.tooltip {
+  display:inline-block;
+  position:relative;
+  text-align:left;
+}
+
+.tooltip h3 {margin:12px 0;}
+
+
+.prev, .next {
+  padding-top: 80px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.6s ease;
+  z-index: 2;
+}
+.next {
+  position: absolute;
+  right: 20px;
+}
+.prev {
+  position: absolute;
+  left: 20px;
+}
+.prev:hover, .next:hover {
+  height: 100%;
+}
+
+.prev_hidden {
+  display: none;
+}
